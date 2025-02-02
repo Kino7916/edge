@@ -26,7 +26,7 @@ exports.default = new NativeFunction({
     ],
     async execute(ctx, [path, send]) {
         try {
-            const full = resolve(process.cwd(), path);
+            const full = resolve(process.cwd(), `${path}.js`);
             if (!existsSync(full)) return this.stop();
             send ??= true;
             let code = require(full);
