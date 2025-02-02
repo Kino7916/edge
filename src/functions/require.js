@@ -29,7 +29,7 @@ exports.default = new NativeFunction({
         }
     ],
     async execute(ctx, [path, type]) {
-        const full = resolve(process.cwd(), path);
+        const full = resolve(process.cwd(), `${path}.js`);
         if (!existsSync(full)) return this.stop();
         if (type) {
             delete require.cache[full];
