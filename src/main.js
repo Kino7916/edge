@@ -1,4 +1,4 @@
-const { ForgeExtension } = require('@tryforge/forgescript');
+const { ForgeExtension } = require("@tryforge/forgescript");
 
 class QuorielEdge extends ForgeExtension {
     name = "QuorielEdge";
@@ -6,7 +6,7 @@ class QuorielEdge extends ForgeExtension {
     version = require("../package.json").version;
 
     init() {
-        this.load(__dirname + '/functions');
+        this.load(__dirname + "/functions");
     }
 }
 
