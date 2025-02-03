@@ -1,6 +1,6 @@
 const { Logger, NativeFunction, ArgType, Compiler, Interpreter } = require("@tryforge/forgescript");
 const { resolve } = require("path");
-const { existsSync } = require('fs');
+const { existsSync } = require("fs");
 
 exports.default = new NativeFunction({
     name: "$execution",
@@ -30,7 +30,7 @@ exports.default = new NativeFunction({
             if (!existsSync(full)) return this.stop();
             send ??= true;
             let code = require(full);
-            if (typeof code === 'object') {
+            if (typeof code === "object") {
                 code = code.code;
             }
             const result = await Interpreter.run({
