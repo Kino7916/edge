@@ -1,6 +1,6 @@
 const { NativeFunction, ArgType } = require("@tryforge/forgescript");
 const { resolve } = require("path");
-const { existsSync } = require('fs');
+const { existsSync } = require("fs");
 
 exports.default = new NativeFunction({
     name: "$require",
@@ -37,6 +37,6 @@ exports.default = new NativeFunction({
             return this.success();
         }
         const result = require(full);
-        return this.success(typeof result === 'object' ? JSON.stringify(result) : result);
+        return this.success(typeof result === "object" ? JSON.stringify(result) : result);
     }
 });
