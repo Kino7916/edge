@@ -6,6 +6,6 @@
     "author": "Mlad (https://github.com/eolthar)",
     "license": "GPL-3.0",
     "dependencies": {
-        "@tryforge/forgescript": "^2.2.0"
+        "@tryforge/forgescript": "^2.3.0"
     }
 }
