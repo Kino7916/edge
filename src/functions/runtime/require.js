@@ -24,12 +24,12 @@ exports.default = new NativeFunction({
             rest: true
         }
     ],
-    async execute(ctx, [path, ...keys]) {
+    async execute(ctx, [path, keys]) {
         const full = resolve(process.cwd(), path);
         if (!existsSync(full)) return this.success();
         let result = require(full);
         if (typeof result !== "object") return this.success(result);
-        for (const key of keys.flat()) {
+        for (const key of keys) {
             if (!(result && key in result)) return this.success();
             result = result[key];
         }
