@@ -3,7 +3,7 @@
 
 ## Установка
 ```
-npm i https://github.com/quoriel/edge.git
+npm i github:quoriel/edge
 ```
 
 ## Подключение
@@ -19,6 +19,3 @@ const client = new ForgeClient({
 
 client.login("...");
 ```
-
-## Функции
-Перечень всех доступных функций можно найти в директории **src/functions**. Ознакомьтесь с каждой для лучшего понимания возможностей дополнения.
