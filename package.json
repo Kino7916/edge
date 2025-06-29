@@ -1,10 +1,13 @@
 {
     "name": "@quoriel/edge",
-    "description": "Набор дополнительных функций для ForgeScript, упрощающий работу с различными сценариями и задачами",
+    "description": "A set of additional functions for ForgeScript to simplify work with various scripts and tasks",
     "version": "1.0.0",
     "main": "src/main.js",
     "author": "Mlad (https://github.com/eolthar)",
     "license": "GPL-3.0",
+    "scripts": {
+        "docgen": "node src/docgen.js"
+    },
     "dependencies": {
         "@tryforge/forgescript": "^2.3.0"
     }

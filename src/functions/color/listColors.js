@@ -4,7 +4,7 @@ const colors = require("../../colors.json");
 exports.default = new NativeFunction({
     name: "$listColors",
     version: "1.0.0",
-    description: "Список всех стандартных цветов и их hex-значений.",
+    description: "List of all standard colors and their hex values",
     output: ArgType.Json,
     unwrap: true,
     async execute(ctx) {

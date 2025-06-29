@@ -5,21 +5,21 @@ const { existsSync } = require("fs");
 exports.default = new NativeFunction({
     name: "$execution",
     version: "1.0.0",
-    description: "Выполняет код, экспортированный как строка из указанного файла",
+    description: "Executes code exported as a string from the specified file",
     output: ArgType.Unknown,
     brackets: true,
     unwrap: true,
     args: [
         {
             name: "path",
-            description: "Путь к файлу, который экспортирует код в виде строки",
+            description: "File path",
             type: ArgType.String,
             required: true,
             rest: false
         },
         {
             name: "send",
-            description: "Определяет, следует ли отправить результат как новое сообщение",
+            description: "Sends the result as a new message",
             type: ArgType.Boolean,
             rest: false
         }

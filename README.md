@@ -1,12 +1,12 @@
 # QuorielEdge
-Расширенный набор функций для **ForgeScript**, обеспечивающий оптимизацию рабочих процессов и упрощение выполнения различных задач, интеграцию и обработку сценариев.
+An extended set of functions for **ForgeScript**, designed to optimize workflows, simplify the execution of various tasks, and support script integration and processing.
 
-## Установка
+## Installation
 ```
 npm i github:quoriel/edge
 ```
 
-## Подключение
+## Connection
 ```js
 const { ForgeClient } = require("@tryforge/forgescript");
 const { QuorielEdge } = require("@quoriel/edge");

@@ -4,14 +4,14 @@ const colors = require("../../colors.json");
 exports.default = new NativeFunction({
     name: "$colorInfo",
     version: "1.0.0",
-    description: "Возвращает подробную информацию о цвете",
+    description: "Returns detailed color information for the specified hex color",
     output: ArgType.Json,
     brackets: true,
     unwrap: true,
     args: [
         {
             name: "color",
-            description: "Hex-цвет, для которого требуется получить информацию",
+            description: "Hex color for information",
             type: ArgType.Color,
             required: true,
             rest: false
