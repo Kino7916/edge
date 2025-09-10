@@ -1,5 +1,5 @@
 # QuorielEdge
-An extended set of functions for **ForgeScript**, designed to optimize workflows, simplify the execution of various tasks, and support script integration and processing.
+An extended set of functions for ForgeScript, designed to optimize workflows, simplify the execution of various tasks, and support script integration and processing.
 
 ## Installation
 ```
