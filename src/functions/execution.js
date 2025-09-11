@@ -16,29 +16,21 @@ exports.default = new NativeFunction({
             type: ArgType.String,
             required: true,
             rest: false
-        },
-        {
-            name: "send",
-            description: "Sends the result as a new message",
-            type: ArgType.Boolean,
-            rest: false
         }
     ],
-    async execute(ctx, [path, send]) {
+    async execute(ctx, [path]) {
         try {
             const full = resolve(process.cwd(), path);
             if (!existsSync(full)) return this.stop();
-            send ??= true;
             let code = require(full);
             if (typeof code === "object") {
                 code = code.code;
             }
             const result = await Interpreter.run({
                 ...ctx.runtime,
-                data: Compiler.compile(code),
-                doNotSend: !send,
+                data: Compiler.compile(code)
             });
-            return result === null ? this.stop() : this.success(send ? undefined : result);
+            return result === null ? this.stop() : this.success(result);
         } catch (error) {
             Logger.error(error);
             return this.error(error);

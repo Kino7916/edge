@@ -20,7 +20,7 @@ exports.default = new NativeFunction({
     ],
     async execute(ctx, [path]) {
         const full = resolve(process.cwd(), path);
-        if (!existsSync(full)) return this.success();
+        if (!existsSync(full)) return this.stop();
         try {
             const result = require(full);
             return this.success(typeof result === "object" ? JSON.stringify(result) : result);
