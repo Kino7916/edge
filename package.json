@@ -6,7 +6,7 @@
     "author": "Mlad (https://github.com/eolthar)",
     "license": "GPL-3.0",
     "scripts": {
-        "docgen": "node src/docgen.js"
+        "docgen": "bun run src/docgen.js"
     },
     "dependencies": {
         "@tryforge/forgescript": "^2.4.1"
