@@ -20,8 +20,7 @@
     },
     "exports": [
         "./dist/index.js",
-        "./dist/cjs/index.js"
+        "./dist/esm/index.js"
     ],
-    "types": "./dist/types",
-    "type": "module"
+    "types": "./dist/types"
 }
