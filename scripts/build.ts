@@ -12,14 +12,14 @@ const BuildOptions: Bun.BuildConfig = {
     target: 'node',
     tsconfig: 'tsconfig.json',
     external: ['@tryforge/forgescript'],
-    naming: '[dir]/[name].js'
+    naming: '[dir]/[name].mjs'
 }
 
 // Clear existing dist
 rmSync('dist', { recursive: true, force: true })
 
 // Running for ES Modules
-Bun.build({...BuildOptions, format: 'esm', outdir: 'dist/esm'})
+Bun.build({...BuildOptions, format: 'esm', outdir: 'dist'})
 
 // Transpiling for CommonJS
 // # Use tsc since its cleaner
