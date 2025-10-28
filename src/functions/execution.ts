@@ -8,7 +8,7 @@ import {
 import { resolve } from 'path'
 import { existsSync } from 'fs';
 
-exports.default = new NativeFunction({
+export default new NativeFunction({
     name: "$execution",
     description: "Executes code exported as a string from the specified file",
     version: "1.0.0",

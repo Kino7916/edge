@@ -2,7 +2,7 @@ import { NativeFunction, ArgType } from "@tryforge/forgescript";
 import { resolve } from 'path'
 import { existsSync } from "fs";
 
-exports.default = new NativeFunction({
+export default new NativeFunction({
     name: "$require",
     description: "Dynamically loads the module",
     version: "1.0.0",

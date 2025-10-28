@@ -7,7 +7,7 @@ const ActionType = {
     update: "update"
 }
 
-exports.default = new NativeFunction({
+export default new NativeFunction({
     name: "$requireCache",
     description: "Deletes a module from the cache or reloads it (including dependencies)",
     version: "1.0.0",

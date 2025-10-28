@@ -1,6 +1,6 @@
 import { NativeFunction, ArgType } from "@tryforge/forgescript";
 
-exports.default = new NativeFunction({
+export default new NativeFunction({
     name: "$jsonAssign",
     description: "Combines multiple JSON objects into a single JSON object",
     version: "1.0.0",
