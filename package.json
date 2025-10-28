@@ -20,7 +20,7 @@
     },
     "exports": [
         "./dist/index.js",
-        "./dist/esm/index.js"
+        "./dist/index.mjs"
     ],
     "types": "./dist/types"
 }
