@@ -1,9 +1,5 @@
 import { ForgeExtension, type ForgeClient } from "@tryforge/forgescript";
-import {
-    name,
-    description,
-    version
-} from '../package.json'
+import { name, description, version } from '../package.json'
 
 export class QuorielExtension extends ForgeExtension {
     public readonly name = name
@@ -11,6 +7,6 @@ export class QuorielExtension extends ForgeExtension {
     public readonly version = version
 
     public init(client: ForgeClient) {
-        
+
     }
 }
