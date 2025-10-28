@@ -8,8 +8,9 @@ entrypoints = entrypoints.map((x) => `${x}`)
 
 const BuildOptions: Bun.BuildConfig = {
     entrypoints: entrypoints,
-    splitting: false,
+    splitting: true,
     target: 'node',
+    tsconfig: 'tsconfig.json',
     external: ['@tryforge/forgescript'],
     naming: '[dir]/[name].js'
 }
@@ -18,8 +19,9 @@ const BuildOptions: Bun.BuildConfig = {
 rmSync('dist', { recursive: true, force: true })
 
 // Running for ES Modules
-Bun.build({...BuildOptions, format: 'esm', outdir: 'dist'})
+Bun.build({...BuildOptions, format: 'esm', outdir: 'dist/esm'})
 
 // Transpiling for CommonJS
-BuildOptions.splitting = false
-Bun.build({...BuildOptions, format: 'cjs', outdir: 'dist/cjs'})
+// # Use tsc since its cleaner
+// BuildOptions.splitting = false
+// Bun.build({...BuildOptions, format: 'cjs', outdir: 'dist/cjs'})
