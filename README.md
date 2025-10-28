@@ -29,3 +29,13 @@ const client = new ForgeClient({
 
 client.login("...");
 ```
+
+## Building from source
+You can clone this repository to your project workspace
+> The code were build with bun's transpiler (ESM) and TypeScript (CJS)
+
+```bash
+# Run the following commands
+# Using Bun
+bun run build
+```
