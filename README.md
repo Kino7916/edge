@@ -1,9 +1,19 @@
 # QuorielEdge
-An extended set of functions for ForgeScript, designed to optimize workflows, simplify the execution of various tasks, and support script integration and processing.
+A super-set of ForgeScript, designed to optimize workflows, apply community patches, simplify the execution of various tasks, and support script integration and processing.
+
+
 
 ## Installation
-```
-npm i github:quoriel/edge
+```bash
+# Install using your package managers
+
+# Using NPM
+npm install github:quoriel/edge
+
+# or using 3rd package managers
+yarn install github:quoriel/edge
+pnpm install github:quoriel/edge
+bun  install github:quoriel/edge
 ```
 
 ## Connection
