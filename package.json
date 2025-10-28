@@ -22,5 +22,6 @@
         "./dist/index.js",
         "./dist/cjs/index.js"
     ],
-    "types": "./dist/types"
+    "types": "./dist/types",
+    "type": "module"
 }
