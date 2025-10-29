@@ -1,3 +1,4 @@
 import { generateMetadata } from "@tryforge/forgescript";
+import { resolve } from "path";
 
-generateMetadata(`${__dirname}/functions`, "functions");
+generateMetadata(resolve(process.cwd(), 'dist/functions'), "functions")
