@@ -44,4 +44,5 @@ bun run build
 # npm install --save-dev bun
 
 node --experimental-strip-types scripts/build.ts
+
 ```
