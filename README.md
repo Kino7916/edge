@@ -38,4 +38,10 @@ You can clone this repository to your project workspace
 # Run the following commands
 # Using Bun
 bun run build
+
+# or using NodeJS v23
+# Make sure to install bun if you're using nodejs
+# npm install --save-dev bun
+
+node --experimental-strip-types scripts/build.ts
 ```
