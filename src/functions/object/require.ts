@@ -4,8 +4,7 @@ import { existsSync } from "fs";
 
 export default new NativeFunction({
     name: "$require",
-    description: "Dynamically loads the module",
-    version: "1.0.0",
+    description: "Loads the module to $require",
     output: ArgType.Unknown,
     brackets: true,
     unwrap: true,

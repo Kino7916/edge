@@ -1,6 +1,6 @@
-import { QuorielExtension } from "./extension";
+import * as Serializers from './serializer'
+import { Resolver } from "./utils/resolver";
 
-export {
-    // Legacy Compatibility
-    QuorielExtension as QuorielEdge
-}
+Resolver.RegisterType(Serializers.Json)
+
+export { QuorielExtension as QuorielEdge } from './extension'

@@ -1,9 +1,13 @@
 import z from "zod";
 
-export const EdgeConfig = z.object({
-    "enforce-code-patches": z.optional(z.boolean())
+export const ISerializer = z.object({
+    serialize: z.function({ input: [z.any()] })
 })
 
-export const EdgeOptions = z.object({
-    config: z.optional(z.union([z.string(), EdgeConfig]))
+export type ISerializer = z.infer<typeof ISerializer>
+
+export const IDeserializer = z.object({
+    deserialize: z.function({ input: [z.union([z.string(), z.unknown()]) ]})
 })
+
+export type IDeserializer = z.infer<typeof IDeserializer>
